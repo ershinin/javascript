@@ -72,7 +72,7 @@ console.log("Логин найден");
 
 console.log("Задание 5.");
 logins = ["Xodahe", "Gixath", "Qexeme", "Bolyky", "Fifiwu"];
-tryLogin = prompt("Введите логин");
+tryLogin = prompt("Придумайте логин");
 while (logins.includes(tryLogin)) {
     tryLogin = prompt("Логин уже используется. Попробуйте придумать другой");
 }
