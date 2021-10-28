@@ -2,10 +2,14 @@
 
 // Задание 1
 function goodsEnding(count) {
-    if (count > 9 && count < 21) return "товаров";
+    if (count % 100 < 21 && count % 100 > 9) return "товаров";
     if (count % 10 === 1) return "товар";
     if ([2, 3, 4].includes(count % 10)) return "товара";
     return "товаров";
+}
+
+for (let i = 0; i < 130; i++) {
+    console.log(i, goodsEnding(i));
 }
 
 // Задание 2
