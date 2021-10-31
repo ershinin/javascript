@@ -21,29 +21,27 @@ function checkSpam(text, ...spamWords) {
 }
 
 // 3
+// i
 let numsArr = [
     [3, 5, -1, 6, 0],
     [56, -9, 111, 6],
     [11, 86, -12],
 ];
-// i
-function addTen(array) {
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array[i].length; j++) {
-            array[i][j] += 10;
-        }
-    }
-}
-addTen(numsArr);
+numsArr.forEach(
+    (element) => element.forEach(
+        (elem, i, arr) => arr[i] += 10
+    )
+);
 console.log(numsArr);
 // ii
-function createNewArray(array) {
-    let result = [];
-    for (let i = 0; i < array.length; i++) {
-        for (let j = 0; j < array[i].length; j++) {
-            if (array[i][j] > 0) result.push(array[i][j]);
-        }
-    }
-    return result;
-}
-console.log(createNewArray(numsArr));
+numsArr = [
+    [3, 5, -1, 6, 0],
+    [56, -9, 111, 6],
+    [11, 86, -12],
+];
+let newArr = numsArr.map(
+    (array) => array.filter(
+        (a) => a >= 0
+    )
+);
+console.log(newArr);
