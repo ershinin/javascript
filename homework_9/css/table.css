@@ -1,0 +1,26 @@
+#table {
+    width: 400px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table_head {
+    background-color: #7E57C2;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table_head_cell,
+.table_cell {
+    border: 1px solid;
+    line-height: 35px;
+
+}
+
+.table_row:nth-child(even) {
+    background-color: #D1C4E9;
+}

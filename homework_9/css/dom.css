@@ -1,0 +1,19 @@
+.genre__book a {
+    text-decoration: none;
+}
+
+.genre__book__img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.genre__books {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.genre__book {
+    flex: 30%;
+}
