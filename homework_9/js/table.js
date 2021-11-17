@@ -1,5 +1,6 @@
 "use strict";
 
+// Задача 2
 function generateTable(objArr) {
     let tableArea = document.getElementById("table");
     let table = document.createElement("table");
